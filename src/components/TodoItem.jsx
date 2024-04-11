@@ -5,7 +5,7 @@ const TodoItem = ({ todo, removeTodo, updateTodo }) => {
   const { id, title, completed } = todo;
 
   return (
-    <article className="flex  gap-4 py-4 border-b-gray-400 border-b px-4 dark:bg-gray-800">
+    <article className="flex  gap-4 py-4 border-b-gray-400 border-b px-4 dark:bg-gray-800 transition-all duration-1000 ">
       <button
         className={`w-5 h-5 flex-none ${completed ? "flex  items-center justify-center rounded-full border-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" : "inline-block rounded-full border-2"}`}
         onClick={() => updateTodo(id)}
